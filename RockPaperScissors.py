@@ -11,7 +11,7 @@ while i <2:
     userChoices= userChoices.lower().strip()        #warunek na małe litery i usuniecie białych znaków
     computerChoice = random.choice(choices)
     print(userChoices,computerChoice)
-    if len(userChoices)==0:      #sprawdzenie czy użytkownik podal
+    if len(userChoices)==0:      #sprawdzenie czy użytkownik podal cokolwiek
         print('Try again')
         time.sleep(10)           #czas jaki bedzie czekal na odpowiedz w sekundach
     if userChoices == computerChoice:
