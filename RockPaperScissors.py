@@ -8,12 +8,12 @@ computerScore=0     #zmienna do przechowywania wyniku komputera
 
 rnd = 1                  #ilosc rund poczatkowa
 while True:
-    userChoices = input("Please give me your choice: (p)apper, (s)cissore, (r)ock:\n")
+    userChoices = input("Please give me your choice: (p)apper, (s)cissore, (r)ock:\n(e)nd of game\n")
     userChoices= userChoices.lower().strip()        #warunek na małe litery i usuniecie białych znaków
     computerChoice = random.choice(choices)
     print(userChoices,computerChoice)
 
-    if userChoices=='w':#jezeli wybierze w to wyjdzie z gry
+    if userChoices=='e':        #jezeli wybierze w to wyjdzie z gry
         print("End of the game")
         break
     if rnd==6:          #jesli liczba rund jest rowna 6 to wtedy wyjdz z gry
